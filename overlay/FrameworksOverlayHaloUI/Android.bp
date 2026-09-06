@@ -1,0 +1,4 @@
+runtime_resource_overlay {
+    name: "FrameworksOverlayHaloUI",
+    product_specific: true
+}

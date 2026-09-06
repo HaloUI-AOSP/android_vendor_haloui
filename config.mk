@@ -14,3 +14,7 @@
 
 PRODUCT_COPY_FILES += \
     vendor/haloui/prebuilt/product/etc/sysconfig/contextual_search.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/contextual_search.xml
+
+# Overlay
+PRODUCT_PACKAGES += \
+    FrameworksOverlayHaloUI
