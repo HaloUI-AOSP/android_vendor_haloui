@@ -12,6 +12,16 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+# Bootanimation
+ifeq ($(strip $(TARGET_SCREEN_WIDTH)),)
+    $(warning "TARGET_SCREEN_WIDTH is undefined, assuming 1080p")
+else
+    $(call soong_config_set,vendor_custom,bootanimation_res,$(TARGET_SCREEN_WIDTH))
+endif
+
+PRODUCT_PACKAGES += \
+    bootanimation_haloui
+
 PRODUCT_COPY_FILES += \
     vendor/haloui/prebuilt/product/etc/sysconfig/contextual_search.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/contextual_search.xml
 
