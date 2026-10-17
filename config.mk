@@ -28,3 +28,7 @@ PRODUCT_COPY_FILES += \
 # Overlay
 PRODUCT_PACKAGES += \
     FrameworksOverlayHaloUI
+
+# HaloUI Apps
+PRODUCT_PACKAGES += \
+    VideoWallpaper
