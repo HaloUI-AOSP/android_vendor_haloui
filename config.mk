@@ -32,3 +32,7 @@ PRODUCT_PACKAGES += \
 # HaloUI Apps
 PRODUCT_PACKAGES += \
     VideoWallpaper
+
+# Packages
+PRODUCT_PACKAGES += \
+   OmniJaws
